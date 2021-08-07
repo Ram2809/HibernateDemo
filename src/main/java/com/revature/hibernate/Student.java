@@ -1,5 +1,7 @@
 package com.revature.hibernate;
 
+import java.util.Objects;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -43,6 +45,11 @@ public class Student {
 
 	public void setMarks(Integer marks) {
 		this.marks = marks;
+	}
+
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
 	}
 
 }
