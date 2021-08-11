@@ -13,7 +13,7 @@
 		<!-- <property name="connection.pool_size">1</property>  -->
 		<!-- SQL dialect -->
 		<property name="dialect">org.hibernate.dialect.MySQL8Dialect</property>
-		<property name="hbm2ddl.auto">none</property>
+		<property name="hbm2ddl.auto">update</property>
 		
 		
 		<!-- Enable Hibernate's automatic session context management -->
@@ -34,6 +34,10 @@
 			drop the schema at the end of the session. -->
 		 <!-- <mapping resource="com/hcl/entity/employee.hbm.xml"/> -->
 		<mapping class="com.revature.hibernate.Student" />
+		<mapping class="com.revature.hibernate.Employee" />
+		<mapping class="com.revature.hibernate.Course" />
+		<mapping class="com.revature.hibernate.Associates" />
+		<mapping class="com.revature.hibernate.CustomerEntity" />
 		
 	 <!--	<mapping class="com.cs.Hibernateapp1.Course" />-->
 		 <!--<mapping class="com.cs.one2one.LaptopBag"/>-->
