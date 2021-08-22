@@ -3,6 +3,7 @@ package com.revature.hibernate;
 import java.util.List;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
@@ -15,7 +16,7 @@ public class Associates {
 	@Id
 	private Integer assoicateId;
 	private String associateName;
-	@OneToMany(targetEntity = Course.class)
+	@OneToMany(cascade=CascadeType.ALL, targetEntity= Course.class)
 	@JoinTable(name = "Ass_Cource")
 	private Set<Course> courses;
 

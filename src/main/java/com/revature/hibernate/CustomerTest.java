@@ -41,7 +41,7 @@ public class CustomerTest {
 		} 
 		}
 		 */
-		Query query1 = session.createSQLQuery("select * from Customer");
+		/*Query query1 = session.createSQLQuery("select * from Customer");
 		List<Object[]> customerList1 = query1.list();
 		CustomerEntity c1=new CustomerEntity();
 		for (Object[] clist : customerList1) {
@@ -50,6 +50,7 @@ public class CustomerTest {
 			c1.setCustomerSalary(Double.parseDouble(clist[2].toString()));
 			System.out.println(c1);
 		}
+		//hibernate uses ResultSetMetaData to detect which type of query data type coming from the database
 		Query query = session.createSQLQuery("select * from Customer").addScalar("customerId", new IntegerType()).addScalar("customerName",new StringType()).addScalar("customerSalary",new DoubleType());
 		List<Object[]> customerList = query.list();
 		CustomerEntity c=new CustomerEntity();
@@ -58,7 +59,10 @@ public class CustomerTest {
 			c.setCustomerName(clist[1].toString());
 			c.setCustomerSalary(Double.parseDouble(clist[2].toString()));
 			System.out.println(c);
-		}
+		}*/
+		Query query=session.createQuery("select count(*) from Customer c");
+		List<Integer> countList=query.list();
+		System.out.println(countList.get(0));
 		
 	}
 

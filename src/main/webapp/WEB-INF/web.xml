@@ -4,4 +4,24 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>fileServlet</servlet-name>
+  	<display-name>fileServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.hibernate.fileServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>FileServlet</servlet-name>
+  	<display-name>FileServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.revature.hibernate.FileServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>fileServlet</servlet-name>
+  	<url-pattern>/fileServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FileServlet</servlet-name>
+  	<url-pattern>/FileServlet</url-pattern>
+  </servlet-mapping>
 </web-app>

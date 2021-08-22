@@ -79,5 +79,6 @@ public class StudentTest {
 //			System.out.println(s);
 //		}
 //	}
+		  Query query=session.create
 }
 }

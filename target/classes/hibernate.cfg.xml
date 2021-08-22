@@ -38,6 +38,8 @@
 		<mapping class="com.revature.hibernate.Course" />
 		<mapping class="com.revature.hibernate.Associates" />
 		<mapping class="com.revature.hibernate.CustomerEntity" />
+		<mapping class="com.revature.hibernate.Image" />
+		<mapping class="com.revature.hibernate.FileEntity" />
 		
 	 <!--	<mapping class="com.cs.Hibernateapp1.Course" />-->
 		 <!--<mapping class="com.cs.one2one.LaptopBag"/>-->
